@@ -42,18 +42,15 @@ for (const key in studentArray) {
 }
 
 // Dare la possibilità all’utente attraverso 3 prompt di aggiungere un nuovo oggetto studente inserendo nell’ordine: nome, cognome e età.
-var nomeUtente = prompt('come ti chiami?');
-var cognomeUtente = prompt('quale è il tuo cognome?');
-var anniUtente = Number(prompt('quanti anni hai?'));
 var userData = {
-    'nome' : '0',
-    'cognome': '0',
-    'età' :   0  
+    nome : '0',
+    cognome : '0',
+    età :   0  
 };
 
-userData.nome = nomeUtente;
-userData.cognome = cognomeUtente;
-userData.età = anniUtente;
+userData.nome = prompt('come ti chiami?');
+userData.cognome = prompt('quale è il tuo cognome?');
+userData.età = Number(prompt('quanti anni hai?'));
 
 studentArray.push(userData)
 console.log('TERZA CONSEGNA');
